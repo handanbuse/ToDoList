@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragmentler.SignUp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="60dp"
+        android:src="@drawable/mantar2" />
+
+
+
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="450dp"
+            android:layout_marginTop="150dp"
+            android:layout_height="460dp"
+            android:backgroundTint="@color/arkaplan">
+
+            <EditText
+                android:id="@+id/signEmail"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="55dp"
+                android:background="@color/bg"
+                android:hint="Email "
+                android:inputType="text|textEmailAddress"
+                android:padding="15dp"></EditText>
+
+            <EditText
+                android:id="@+id/signpass"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="155dp"
+                android:background="@color/bg"
+                android:hint="Şifre"
+                android:inputType="number|numberPassword"
+                android:padding="15dp"></EditText>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="280dp"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:background="@color/bg"
+                    android:text="Kayıt Ol"
+                    android:onClick="kayit"
+                    android:id="@+id/kayitol"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/arkaplan"
+                    android:textSize="18sp">
+
+                </Button>
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:background="@color/bg"
+                    android:text="Giriş Yap"
+                    android:onClick="giris"
+                    android:id="@+id/girisyap"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/arkaplan"
+                    android:textSize="18sp">
+
+                </Button>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+</LinearLayout>
